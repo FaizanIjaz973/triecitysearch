@@ -29,5 +29,7 @@ The app implements the following:
 
 The app uses Dagger Hilt for dependency injection to make testing easier and more robust. Additional tests can be added as required. 
 
-The fundamental function of the app is to implement the trie search which returns results in milliseconds once the trie is properly construced and ready to be searched. 
+The fundamental function of the app is to implement the trie search which returns results in milliseconds once the trie is properly construced and ready to be searched. It also takes special characters like 'á' into consideration when constructing the trie and also at the time of searching. 
 Refer to Trie.kt class for the implementation. 
+
+Clicking on a search result in the recyclerview takes to the new activity which shows the city's location on Google maps. For that feature to function, add your google maps API key in the manifest file. 
